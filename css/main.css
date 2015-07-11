@@ -1,0 +1,160 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+ /**
+   * Copyright 2015 Codezona.com
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Olga Maraeva. Author's blog: http://codezona.com/
+   * @desc A small plugin that play text animation when elements are within the first half of
+   *       the user visible viewport of a web browser. 
+   *       Only accounts for vertical position, not horizontal.
+   */
+  
+/*Main styles*/  
+   
+*{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+    font: 14px/20px tahoma;
+    height:100%;
+    min-height:100%;
+	padding:40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	-webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+/*Plugin styles*/
+
+ h2 {
+ text-align:center;
+ margin:40px 0 40px 0;
+ }
+ 
+ p {
+ text-align: justify;
+ margin-bottom: 20px;
+ }
+ 
+
+  span {
+      color:#eee;
+      font-size:60px;
+      padding:5px;
+      font-family:'Roboto', sans-serif;
+      font-weight:bold;
+      opacity:0;
+  }
+  
+  /*random animation*/
+  .animeResult span.red {
+      opacity:1;
+      color: #2196f3;
+      -webkit-animation: myfirst 1s;
+      -moz-animation: myfirst 1s;
+      -ms-animation: myfirst 1s;
+      animation: myfirst 1s;
+  }
+  @-webkit-keyframes myfirst {
+      to {
+          opacity:0;
+          color:red;
+      }
+  }
+  @-moz-keyframes myfirst {
+      to {
+          opacity:0;
+          color:red;
+      }
+  }
+  @-ms-keyframes myfirst {
+      to {
+          opacity:0;
+          color:red;
+      }
+  }
+  @keyframes myfirst {
+      to {
+          opacity:0;
+          color:red;
+      }
+  }
+  
+  /*step-by-step animation*/
+  .animeResult span.scaled {
+      opacity:1;
+      color: #2196f3;
+  }
+  
+  /*rotated animation*/
+  .animeResult span.rotated {
+      display: inline-block;
+      opacity:1;
+      color: #2196f3;
+      -webkit-transform:scale(1);
+      -moz-transform:scale(1);
+      -ms-transform:scale(1);
+      transform:scale(1);
+      -webkit-animation: rotate 0.5s;
+      -moz-animation: rotate 0.5s;
+      -ms-animation: rotate 0.5s;
+      animation: rotate 0.5s;
+  }
+  @-webkit-keyframes rotate {
+      from {
+          -webkit-transform:scale(5);
+          -moz-transform:scale(5);
+          -ms-transform:scale(5);
+          transform:scale(5);
+      }
+  }
+  @-moz-keyframes rotate {
+      from {
+          -webkit-transform:scale(5);
+          -moz-transform:scale(5);
+          -ms-transform:scale(5);
+          transform:scale(5);
+      }
+  }
+  @-ms-keyframes rotate {
+      from {
+          -webkit-transform:scale(5);
+          -moz-transform:scale(5);
+          -ms-transform:scale(5);
+          transform:scale(5);
+      }
+  }
+  @keyframes rotate {
+      from {
+          -webkit-transform:scale(5);
+          -moz-transform:scale(5);
+          -ms-transform:scale(5);
+          transform:scale(5);
+      }
+  }
+
+
+
+
+
+
