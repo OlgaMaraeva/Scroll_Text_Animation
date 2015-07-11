@@ -20,7 +20,7 @@ With "antiscroll" class animation will start on load or document ready.
 
 Every animation starts when h tag will be inside top half of the screen. 
 
-I am planning to add extra animation effect in the future. 
+I am planning to add extra animation effects in the future. 
 
 Enjoy!:)
 
