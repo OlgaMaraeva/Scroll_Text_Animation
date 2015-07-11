@@ -18,11 +18,6 @@ Every animated h tag also has unique data attr. (See html file for details).
 You can prevent h tag from animation on scroll by adding "antiscroll" class name.
 With "antiscroll" class animation will start on load or document ready. 
 
-Example:
-
-<h2 class="text0 antiscroll" data-animation="rotate">Scaled Animation</h2>
-
-
 Every animation starts when h tag will be inside top half of the screen. 
 
 I am planning to add extra animation effect in the future. 
